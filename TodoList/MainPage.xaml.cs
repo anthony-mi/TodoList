@@ -25,6 +25,7 @@ namespace TodoList
         public MainPage()
         {
             this.InitializeComponent();
+
         }
     }
 }

@@ -8,7 +8,45 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
-        
-    </StackPanel>
+    <Page.BottomAppBar>
+        <CommandBar x:Name="commandBar">
+            <AppBarButton Label="Calendar" Icon="Calendar" />
+            <AppBarElementContainer>
+                <SplitButton ToolTipService.ToolTip="Task">
+                    <SplitButton.Resources>
+                        <Style TargetType="SplitButton">
+                            <Setter Property="Height" Value="38"/>
+                        </Style>
+                        <SolidColorBrush x:Key="SplitButtonBackground"
+                                 Color="Transparent"/>
+                        <SolidColorBrush x:Key="SplitButtonBackgroundPressed"
+                                 Color="{ThemeResource SystemListMediumColor}"/>
+                        <SolidColorBrush x:Key="SplitButtonBackgroundPointerOver"
+                                 Color="{ThemeResource SystemListLowColor}"/>
+                        <SolidColorBrush x:Key="SplitButtonBorderBrush" Color="Transparent"/>
+                        <SolidColorBrush x:Key="SplitButtonBorderBrushPointerOver"
+                                 Color="Transparent"/>
+                        <SolidColorBrush x:Key="SplitButtonBorderBrushChecked"
+                                 Color="Transparent"/>
+                    </SplitButton.Resources>
+                    <SplitButton.Content>
+                        <Viewbox Width="16" Height="16" Margin="0,2,0,0">
+                            <SymbolIcon Symbol="Paste"/>
+                        </Viewbox>
+                    </SplitButton.Content>
+                    <SplitButton.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Icon="Add" Text="Create task" />
+                            <MenuFlyoutItem Icon="Accept" Text="Completed"/>
+                            <MenuFlyoutItem Icon="Delete" Text="Deleted"/>
+                        </MenuFlyout>
+                    </SplitButton.Flyout>
+                </SplitButton>
+            </AppBarElementContainer>
+            <AppBarButton Label="Statistic" Icon="ShowResults" />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    </Grid>
 </Page>
