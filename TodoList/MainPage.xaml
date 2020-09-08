@@ -5,25 +5,10 @@
     xmlns:local="using:TodoList"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <TreeView Name="tree" >
-            
-        </TreeView>
-        <!--<muxc:TreeView>
-            <muxc:TreeView.RootNodes>
-                <muxc:TreeViewNode Content="Flavors"
-                           IsExpanded="True">
-                    <muxc:TreeViewNode.Children>
-                        <muxc:TreeViewNode Content="Vanilla"/>
-                        <muxc:TreeViewNode Content="Strawberry"/>
-                        <muxc:TreeViewNode Content="Chocolate"/>
-                    </muxc:TreeViewNode.Children>
-                </muxc:TreeViewNode>
-            </muxc:TreeView.RootNodes>
-        </muxc:TreeView>-->
+        
     </StackPanel>
 </Page>

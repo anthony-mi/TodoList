@@ -25,15 +25,6 @@ namespace TodoList
         public MainPage()
         {
             this.InitializeComponent();
-
-            var node = new TreeViewNode();
-            node.Content = "Root";
-
-            var cnode = new TreeViewNode();
-            node.Content = "Child1";
-
-            node.Children.Add(cnode);
-            tree.RootNodes.Add(node);
         }
     }
 }
